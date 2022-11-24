@@ -1,7 +1,7 @@
 
 @extends('view-template')
 
-@section('title',"Home")
+@section('title',$book->title)
 
 @section('content')
 

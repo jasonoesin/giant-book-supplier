@@ -13,7 +13,8 @@
 <body class="vw-100 min-vh-100 d-flex flex-column">
 
 @include('header')
-<div class="mt-5"></div>
+<div class="SPACE" style="margin-top: 7.5rem"></div>
+
 <div class="d-flex w-100 h-100 d-flex align-items-center flex-column">
     @yield('content')
 </div>

@@ -1,5 +1,6 @@
-<div class="position-fixed top-0 w-100 bg-light d-flex justify-content-center p-2 HEADER">
-    <div class="text-white d-flex gap-4 align-items-center">
+<div class="position-fixed top-0 w-100 bg-light d-flex flex-column justify-content-center HEADER">
+    <div class="d-flex justify-content-center bg-warning text-white py-4 px-2" style="font-size: 1.5rem">Giant Book Supplier</div>
+    <div class="text-white d-flex gap-4 align-items-center justify-content-center p-2">
         <a href="{{url('/')}}" class="text-decoration-none text-blue">Home</a>
         <div class="category-dropdown">
             <a href="{{url('/')}}" class="text-decoration-none text-blue">Category ▾</a>
