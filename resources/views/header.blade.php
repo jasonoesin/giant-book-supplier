@@ -1,22 +1,30 @@
-<div class="position-fixed top-0 w-100 bg-light d-flex justify-content-center p-2">
+<div class="position-fixed top-0 w-100 bg-light d-flex justify-content-center p-2 HEADER">
     <div class="text-white d-flex gap-4 align-items-center">
         <a href="{{url('/')}}" class="text-decoration-none text-blue">Home</a>
         <div class="category-dropdown">
             <a href="{{url('/')}}" class="text-decoration-none text-blue">Category ▾</a>
             <div class="container">
                 <div class="dropdown-content">
-                    <a href="{{url('./product/category/electronics')}}">Electronics</a>
-                    <a href="{{url('./product/category/provision')}}">Provision</a>
-                    <a href="{{url('./product/category/fashion')}}">Fashion</a>
+                    @foreach($categories as $cat)
+                        @php
+                          $string = strtolower($cat->name)
+                        @endphp
+
+                        <a href="{{url("/category/$string")}}">{{$cat->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <a href="{{url('/')}}" class="text-decoration-none text-blue">Publisher</a>
-        <a href="{{url('/')}}" class="text-decoration-none text-blue">Contact</a>
+        <a href="{{url('/publisher')}}" class="text-decoration-none text-blue">Publisher</a>
+        <a href="{{url('/contact')}}" class="text-decoration-none text-blue">Contact</a>
     </div>
 </div>
 
 <style>
+
+    .HEADER{
+        z-index: 5;
+    }
 
     .category-dropdown {
         position: relative;

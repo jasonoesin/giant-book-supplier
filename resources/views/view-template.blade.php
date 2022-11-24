@@ -10,7 +10,7 @@
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
           rel="stylesheet">
 </head>
-<body class="vw-100 vh-100 d-flex flex-column">
+<body class="vw-100 min-vh-100 d-flex flex-column">
 
 @include('header')
 <div class="mt-5"></div>

@@ -13,6 +13,7 @@ class BookFactory extends Factory
 
         // Generate Random Publisher ID
         return [
+            'year'=> rand(2000,2020),
             'publisher_id' => $this->faker->randomElement($publisher_ids),
             'author' => $this->faker->name,
         ];
